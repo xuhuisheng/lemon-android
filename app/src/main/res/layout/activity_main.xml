@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical"
+	android:layout_marginTop="0dp"
+	style="@style/FitSystemWindows" >
+
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+		<LinearLayout
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:orientation="vertical" >
+
+			<android.support.design.widget.AppBarLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					style="@style/FitSystemWindows"
+					android:id="@+id/appBarLayout">
+				<android.support.v7.widget.Toolbar
+						android:id="@+id/toolbar"
+						android:layout_width="match_parent"
+						android:layout_height="?attr/actionBarSize"
+						android:background="?attr/colorPrimary"
+						app:elevation="8dp"
+						app:layout_scrollFlags="scroll|enterAlways"/>
+			</android.support.design.widget.AppBarLayout>
+
+			<FrameLayout
+				android:id="@+id/realtabcontent"
+				android:layout_width="fill_parent"
+				android:layout_height="0dip"
+				android:layout_weight="1" />
+
+			<android.support.v4.app.FragmentTabHost
+				android:id="@android:id/tabhost"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:background="@drawable/tt_tab_bk">
+
+				<FrameLayout
+					android:id="@android:id/tabcontent"
+					android:layout_width="0dp"
+					android:layout_height="0dp"
+					android:layout_weight="0" />
+
+			</android.support.v4.app.FragmentTabHost>
+
+		</LinearLayout>
+
+		<android.support.design.widget.NavigationView
+            android:id="@+id/left_drawer"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            app:headerLayout="@layout/drawer_header"
+            app:menu="@menu/drawer"/>
+	</android.support.v4.widget.DrawerLayout>
+</RelativeLayout>

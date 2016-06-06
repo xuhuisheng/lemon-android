@@ -1,0 +1,10 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+	<group android:checkableBehavior="single">
+		<item
+			android:id="@+id/navigation_item_1"
+			android:checked="true"
+			android:icon="@drawable/ic_launcher"
+			android:title="coming soon"
+			android:textColor="#000000"/>
+	</group>
+</menu>

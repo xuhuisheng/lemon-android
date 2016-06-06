@@ -1,0 +1,47 @@
+apply plugin: 'com.android.application'
+
+android {
+/*
+    signingConfigs {
+        config {
+            keyAlias 'AppKey'
+            keyPassword '123456'
+            storeFile file('mossle.jks')
+            storePassword '123456'
+        }
+    }
+*/
+    compileSdkVersion 23
+    buildToolsVersion "23.0.3"
+
+    defaultConfig {
+        applicationId "com.mossle.android"
+        minSdkVersion 14
+        targetSdkVersion 23
+
+        versionCode 1
+        versionName '0.0.1'
+        multiDexEnabled = true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            // proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    productFlavors {
+        mossle {
+        }
+    }
+}
+
+dependencies {
+    compile 'com.android.support:appcompat-v7:23.2.1'
+    // compile 'com.android.support:multidex:1.0.0'
+    compile 'com.android.support:design:23.2.1'
+    compile 'com.readystatesoftware.systembartint:systembartint:1.0.4'
+    compile 'com.balysv.materialmenu:material-menu-abc:1.5.4'
+    compile 'com.balysv.materialmenu:material-menu-toolbar:1.5.4'
+    compile 'com.astuetz:pagerslidingtabstrip:1.0.1'
+}
+

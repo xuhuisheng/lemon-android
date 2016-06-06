@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+		xmlns:android="http://schemas.android.com/apk/res/android"
+		android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+		android:orientation="vertical"
+		android:id="@+id/item_process_definition"
+		android:paddingLeft="10dp">
+	<TextView
+		android:layout_height="wrap_content"
+		android:layout_width="fill_parent"
+		android:id="@+id/ItemTitle"
+		android:layout_marginLeft="11dp"
+		android:ellipsize="end"
+		android:includeFontPadding="false"
+		android:maxEms="12"
+		android:paddingTop="10dp"
+		android:singleLine="true"
+		android:textColor="@color/contact_name_color"
+		android:textSize="17sp">
+	</TextView>
+	<TextView
+		android:layout_height="wrap_content"
+		android:layout_width="fill_parent"
+		android:id="@+id/ItemText"
+		android:layout_marginLeft="11dp"
+		android:layout_marginRight="10dp"
+		android:background="@android:color/transparent"
+		android:ellipsize="end"
+		android:ems="17"
+		android:singleLine="true"
+		android:paddingBottom="15dp"
+		android:textColor="@color/message_body_text_color"
+		android:textSize="14sp">
+	</TextView>
+
+	<View
+       	android:layout_width="wrap_content"
+       	android:layout_height="0.5dp"
+       	android:layout_marginLeft="10dp"
+       	android:paddingTop="1dp"
+       	android:background="@drawable/tt_divide_line" />
+</LinearLayout>

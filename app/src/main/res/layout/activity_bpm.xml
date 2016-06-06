@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical"
+	android:background="#FFFFFF">
+
+	<android.support.design.widget.AppBarLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			style="@style/FitSystemWindows"
+			android:id="@+id/appBarLayout">
+		<android.support.v7.widget.Toolbar
+				android:id="@+id/toolbar"
+				android:layout_width="match_parent"
+				android:layout_height="?attr/actionBarSize"
+				android:background="?attr/colorPrimary"
+				app:elevation="8dp"
+				app:layout_scrollFlags="scroll|enterAlways"/>
+	</android.support.design.widget.AppBarLayout>
+	
+	<android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+ 
+        <android.support.v4.view.PagerTabStrip
+            android:id="@+id/tabstrip"
+            android:layout_width="wrap_content"
+            android:layout_height="50dip"
+            android:gravity="center" />
+    </android.support.v4.view.ViewPager>
+
+<!--
+	<TextView
+		android:id="@+id/activity_bpm_def_text1"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="20dp"
+		android:drawablePadding="20dp"
+		android:gravity="center_vertical"
+		android:paddingLeft="20dp"
+		android:paddingRight="20dp"
+		android:text="Process Definition"
+		android:textSize="16dp"
+		android:textColor="#000000" />
+
+	<ListView
+		android:id="@+id/activity_bpm_def"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_gravity="left"
+		android:background="#FFFFFF"
+		android:choiceMode="singleChoice"
+		android:divider="@android:color/transparent"
+		android:dividerHeight="0dp" />
+
+	<TextView
+		android:id="@+id/activity_bpm_def_text2"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="20dp"
+		android:drawablePadding="20dp"
+		android:gravity="center_vertical"
+		android:paddingLeft="20dp"
+		android:paddingRight="20dp"
+		android:text="Process Instance"
+		android:textSize="16dp"
+		android:textColor="#000000" />
+
+	<ListView
+		android:id="@+id/activity_bpm_inst"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_gravity="left"
+		android:background="#FFFFFF"
+		android:choiceMode="singleChoice"
+		android:divider="@android:color/transparent"
+		android:dividerHeight="0dp" />
+-->
+</LinearLayout>

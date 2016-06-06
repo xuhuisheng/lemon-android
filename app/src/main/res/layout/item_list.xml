@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>  
+<LinearLayout   
+		xmlns:android="http://schemas.android.com/apk/res/android"   
+		android:layout_width="fill_parent"   
+		android:layout_height="wrap_content"   
+		android:orientation="vertical"  
+		android:id="@+id/MyListItem"   
+		android:paddingBottom="3dip"   
+		android:paddingLeft="10dip">  
+		<TextView   
+				android:layout_height="wrap_content"   
+				android:layout_width="fill_parent"   
+				android:id="@+id/ItemTitle"   
+				android:textSize="30dip"
+				android:textColor="#000000">  
+		</TextView>  
+		<TextView   
+				android:layout_height="wrap_content"   
+				android:layout_width="fill_parent"   
+				android:id="@+id/ItemText"
+				android:textColor="#000000">  
+		</TextView>  
+</LinearLayout>  

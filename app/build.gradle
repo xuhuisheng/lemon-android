@@ -1,16 +1,16 @@
 apply plugin: 'com.android.application'
 
 android {
-/*
+
     signingConfigs {
         config {
-            keyAlias 'AppKey'
-            keyPassword '123456'
+            keyAlias 'MossleAppKey'
+            keyPassword '111111'
             storeFile file('mossle.jks')
-            storePassword '123456'
+            storePassword '111111'
         }
     }
-*/
+
     compileSdkVersion 23
     buildToolsVersion "23.0.3"
 
